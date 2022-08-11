@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&display=swap" rel="stylesheet">
+    <title>S App</title>
+    <style>
+         * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background: #7c4fe0;
+            height: 100vh;
+            width: 100%;
+            padding-top: 10px;
+            opacity: 90%;
+        }
+        header <.nav{
+            display: flex;
+            width: 100%;
+            margin: 0 auto;
+            padding: 10px;
+            align-items: center;
+        }
+        header .nav .menu{          
+            width: 50%;      
+        }
+        header .menu ul{
+            display: flex;
+            list-style: none;
+            justify-content: space-around;      
+            text-decoration: none;  
+            color: aqua;    
+        }
+        .container{
+            display: flex;
+            height: 450px;
+            width: 100%;
+        }
+        header .menu2{
+            display: none;
+            position: absolute;
+            list-style: none;
+        }
+        header .menu .menu2{
+            display: none;
+            position: absolute;
+            list-style: none;
+            margin-bottom: 8px;
+        }
+
+        .left{
+            width: 50%;
+            margin-left: 50px; 
+            margin-top: 60px;
+        }
+        header .nav .menu li{
+            white-space: nowrap;
+        }
+        .make_cool{
+            color: #fff;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 58px;
+        }
+        .right{
+            width: 50%;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+        .content{
+            color: #fff;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 18px;
+        }
+        .img-wrapper_2{
+            margin-top: 10px;
+            width:300px;
+            display: flex;
+        }
+        .img-wrapper_2 img{
+            width: 100%;
+        }
+        .img-ios{
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        .img-gg{
+            cursor: pointer;
+        }
+        .img-phone{
+            width: 700px;
+            height: 400px;
+        }
+        .img-phone img{
+            height: 100%;
+        }
+        #backround{
+            background-image: url("imgs/welcome-bg.jpg");
+            background-size: cover;
+        }
+        header .menu2{
+            display: none;
+            list-style: none;
+            position: absolute;
+        }
+        header .menu1 li:hover .menu2{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div id="backround">
+    <header>
+        <div class="nav">
+            <div class="logo">
+                <div class="img-wrapper">
+                    <img src="imgs/logo-white.png">
+                </div>
+            </div>
+            <div class="menu">
+                <ul class="menu1">
+                    <li><a href="#">Home</a>
+                        <ul class="menu2">
+                            <li><a href="#">Home Page-1</a></li>
+                            <li><a href="#">Home Page-2</a></li>
+                            <li><a href="#">Home Page-3</a></li>
+                            <li><a href="#">Home Page-4</a></li>
+                            <li><a href="#">Home Page-5</a></li>
+                            <li><a href="#">Home Page-6</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Features</a></li>              
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Screenshots</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="left">
+                <h1 class="make_cool">Make cool <br> Landing pages <br> with sApp</h1>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Impedit nihil <br>  tenetur minus quidem est deserunt molestias accusamus harum ullam <br> tempore debitis et, 
+                expedita, repellat delectus aspernatur neque itaque <br> qui quod.</p>
+                <div class="img-wrapper_2">
+                    <div class="img-gg">
+                        <img src="imgs/google-play.png" alt="">
+                    </div>
+                    <div class="img-ios">
+                        <img src="imgs/app-store.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="img-phone">
+                    <img src="imgs/welcome-mockup.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    </div>
+    
+        
+   
+</body>
+</html>
